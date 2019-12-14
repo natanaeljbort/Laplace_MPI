@@ -66,10 +66,10 @@ int main(int argc, char** argv)
   // Initializing the MPI environment
   MPI_Init(&argc, &argv);
   // Will use the "me" variable in order to determine the current process
-  // "ndims" variable for n number of dimensions
+  // "nproc" variable for n number of processes
+  
   MPI_Comm_rank(MPI_COMM_WORLD, &me);
 
-  // "nproc" variable for n number of processes
   MPI_Comm_size(MPI_COMM_WORLD, &nproces);
 
 
